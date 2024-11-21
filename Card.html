@@ -1,34 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <title>Hero Section</title>
-</head>
-<body class="bg-gray-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>News & Articles</title>
+  </head>
+  <body class="bg-gray-50">
+    <section class="container mx-auto px-5 py-12">
+      <!-- Title -->
+       <h3 class="text-base text-gray-400 mb-2  text-center ">from the blog</h3>
+      <h1 class="text-3xl font-bold text-center mb-10">News & Articles</h1>
+      <!-- Articles Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Single Article -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden ">
+          <!-- Image Section -->
+          <div class="relative">
+            <img
+              src="https://img.freepik.com/free-photo/cheerful-young-caucasian-businessman_171337-727.jpg"
+              alt="Article Image"
+              class="w-full h-48 object-cover"
+            />
+            <div
+              class="absolute top-3 left-3 bg-purple-500 text-white text-sm font-semibold px-4 py-1 rounded-lg"
+            >
+              20 May
+            </div>
+          </div>
+          <!-- Content Section -->
+          <div class="p-6">
+            <!-- Author Section -->
+            <div class="flex items-center mb-3">
+              <img
+                src="https://img.freepik.com/free-photo/cheerful-young-caucasian-businessman_171337-727.jpg"
+                alt="Author"
+                class="w-10 h-10 rounded-full border-2 border-purple-500"
+              />
+              <p class="ml-3 text-sm text-gray-600">
+                by <span class="font-semibold text-gray-900">Kevin Martin</span>
+              </p>
+            </div>
+            <!-- Title -->
+            <h2 class="text-lg font-bold text-gray-900 mb-4">
+              Let’s understand the different types of data backups
+            </h2>
+            <!-- Footer -->
+            <div class="flex items-center justify-between">
+              <p class="flex items-center text-purple-500 text-sm">
+                <i class="fas fa-comments mr-2"></i> 2 Comments
+              </p>
+              <a
+                href="#"
+                class="text-sm text-gray-600 font-semibold hover:underline"
+                >More</a
+              >
+            </div>
+          </div>
+        </div>
 
-  <!-- Hero Section -->
-  <section class="relative bg-purple-900 text-white h-[700px]">
-    <div class="absolute inset-0">
-      <img
-        src="https://img.freepik.com/free-photo/portrait-business-woman-working-laptop_1303-9727.jpg?semt=ais_hybrid" 
-        alt="Background Image"
-        class="w-full h-full object-cover opacity-30"
-      />
-    </div>
-    <div class="relative max-w-7xl mx-auto px-6 py-56">
-      <div class="text-center lg:text-left">
-        <p class="text-sm uppercase tracking-wide text-gray-200">Quality Results | Success Rates</p>
-        <h1 class="mt-4 text-4xl lg:text-6xl font-bold leading-tight">
-          Cost Effective <br />
-          Digital Marketing Agency
-        </h1>
+        <!-- Repeat the card for other articles -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="relative">
+            <img
+              src="https://img.freepik.com/free-photo/cheerful-young-caucasian-businessman_171337-727.jpg"
+              alt="Article Image"
+              class="w-full h-48 object-cover"
+            />
+            <div
+              class="absolute top-3 left-3 bg-purple-500 text-white text-sm font-semibold px-4 py-1 rounded-lg"
+            >
+              20 May
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center mb-3">
+              <img
+                src="https://img.freepik.com/free-photo/cheerful-young-caucasian-businessman_171337-727.jpg"
+                alt="Author"
+                class="w-10 h-10 rounded-full border-2 border-purple-500"
+              />
+              <p class="ml-3 text-sm text-gray-600">
+                by <span class="font-semibold text-gray-900">Kevin Martin</span>
+              </p>
+            </div>
+            <h2 class="text-lg font-bold text-gray-900 mb-4">
+              Let’s understand the different types of data backups
+            </h2>
+            <div class="flex items-center justify-between">
+              <p class="flex items-center text-purple-500 text-sm">
+                <i class="fas fa-comments mr-2"></i> 2 Comments
+              </p>
+              <a
+                href="#"
+                class="text-sm text-gray-600 font-semibold hover:underline"
+                >More</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Another article card -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="relative">
+            <img
+              src="https://img.freepik.com/free-photo/cheerful-young-caucasian-businessman_171337-727.jpg"
+              alt="Article Image"
+              class="w-full h-48 object-cover"
+            />
+            <div
+              class="absolute top-3 left-3 bg-purple-500 text-white text-sm font-semibold px-4 py-1 rounded-lg"
+            >
+              20 May
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center mb-3">
+              <img
+                src="https://img.freepik.com/free-photo/cheerful-young-caucasian-businessman_171337-727.jpg"
+                alt="Author"
+                class="w-10 h-10 rounded-full border-2 border-purple-500"
+              />
+              <p class="ml-3 text-sm text-gray-600">
+                by <span class="font-semibold text-gray-900">Kevin Martin</span>
+              </p>
+            </div>
+            <h2 class="text-lg font-bold text-gray-900 mb-4">
+              Let’s understand the different types of data backups
+            </h2>
+            <div class="flex items-center justify-between">
+              <p class="flex items-center text-purple-500 text-sm">
+                <i class="fas fa-comments mr-2"></i> 2 Comments
+              </p>
+              <a
+                href="#"
+                class="text-sm text-gray-600 font-semibold hover:underline"
+                >More</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-
-    
-  </section>
-
-</body>
+    </section>
+  </body>
 </html>
