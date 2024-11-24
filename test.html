@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font-awesome-icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+    />
+    <!-- Swiper.js -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <style>
+      body {
+        font-family: "DM Sans", sans-serif;
+      }
+    </style>
+</head>
+<body class="mb-[300px]">
+    <!-- Checkout Section -->
+    <section class="w-full h-[590px] bg-[#1d1729] mt-20">
+        <!-- Title -->
+        <div class="text-white text-center pt-20">
+            <p class="relative section-title">Recent Portfolio</p>
+            <h1
+                class="mt-2 text-3xl md:text-4xl lg:text-5xl font-syne font-semibold"
+            >
+                Checkout our Recently <br /> Completed Projects
+            </h1>
+        </div>
+
+        <!-- Swiper Slider -->
+        <div class="swiper mySwiper w-full max-w-[1400px] mx-auto mt-10">
+            <div class="swiper-wrapper">
+                <!-- Card 1 -->
+                <div class="swiper-slide relative h-[400px]">
+                    <img src="/images/project-4.jpg" class="w-full h-full object-cover" alt="Project Image" />
+                    <div class="absolute bottom-5 w-full px-5">
+                        <span
+                            class="py-2 px-7 md:w-fit text-white bg-gradient-to-tr from-[#7a4df4] to-[#a989fe]"
+                        >
+                            Marketing
+                        </span>
+                        <div class="bg-white text-2xl font-syne font-semibold px-10 py-5">
+                            Tech Website Solution
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="swiper-slide relative h-[400px]">
+                    <img src="/images/project-4.jpg" class="w-full h-full object-cover" alt="Project Image" />
+                    <div class="absolute bottom-5 w-full px-5">
+                        <span
+                            class="py-2 px-7 md:w-fit text-white bg-gradient-to-tr from-[#7a4df4] to-[#a989fe]"
+                        >
+                            Marketing
+                        </span>
+                        <div class="bg-white text-2xl font-syne font-semibold px-10 py-5">
+                            Tech Website Solution
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="swiper-slide relative h-[400px]">
+                    <img src="/images/project-4.jpg" class="w-full h-full object-cover" alt="Project Image" />
+                    <div class="absolute bottom-5 w-full px-5">
+                        <span
+                            class="py-2 px-7 md:w-fit text-white bg-gradient-to-tr from-[#7a4df4] to-[#a989fe]"
+                        >
+                            Marketing
+                        </span>
+                        <div class="bg-white text-2xl font-syne font-semibold px-10 py-5">
+                            Tech Website Solution
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="swiper-slide relative h-[400px]">
+                    <img src="/images/project-4.jpg" class="w-full h-full object-cover" alt="Project Image" />
+                    <div class="absolute bottom-5 w-full px-5">
+                        <span
+                            class="py-2 px-7 md:w-fit text-white bg-gradient-to-tr from-[#7a4df4] to-[#a989fe]"
+                        >
+                            Marketing
+                        </span>
+                        <div class="bg-white text-2xl font-syne font-semibold px-10 py-5">
+                            Tech Website Solution
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Swiper Navigation Buttons -->
+            <div class="swiper-button-next text-white"></div>
+            <div class="swiper-button-prev text-white"></div>
+
+            <!-- Swiper Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.mySwiper', {
+            loop: true, 
+            slidesPerView: 1, 
+            spaceBetween: 20, 
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2, 
+                },
+                1024: {
+                    slidesPerView: 3, 
+                },
+            },
+        });
+    </script>
+</body>
+</html>
